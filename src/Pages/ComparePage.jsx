@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { CompareAside } from "../Components/Asides/CompareAside";
 import { ChartTemplate } from "../Templates/chartTemplate";
 
@@ -16,11 +16,6 @@ export default function ComparePage({ procesos, setProcesos, setMostrarGrafico, 
         ? 1
         : 2
       : null;
-
-  useEffect(() => {
-    console.log("Algoritmo 1:", algoritmo1, "Promedio:", avg1);
-    console.log("Algoritmo 2:", algoritmo2, "Promedio:", avg2);
-  }, [avg1, avg2, algoritmo1, algoritmo2]);
 
   return (
     <>
